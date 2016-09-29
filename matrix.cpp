@@ -98,13 +98,18 @@ template<class T>
     return result;
   }
   
- /* // Matrixaddition
-template<class T>  
-  Matrix<T> Matrix<T> :: operator+(const Matrix<T> other)
-  {
-   assert(this->get_spa() == other.spalten && this->get.zei() == other.zeilen);
-   Matrix<T> result(zeilen, spalten);
-  }*/
+ // Matrixaddition
+template<class T>
+	Matrix<T> Matrix<T> :: add(const Matrix<T> other)
+		{
+			assert(this->get_spa() == other.spalten && this->get.zei() == other.zeilen);
+			Matrix<T> result(zeilen, spalten);
+			for(unsigned int i(0); i < zeilen*spalten; i++)
+			{
+				k += (this->data[i]*other[j]);
+				result[i] = k;
+			}
+		}
   
   
   template class Matrix<double>;
