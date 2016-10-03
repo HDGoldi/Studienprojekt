@@ -24,7 +24,6 @@ class Matrix
   T& operator()(unsigned int i, unsigned int j);
   Matrix<T>& operator=(const Matrix<T>& other);
   Vector<T> apply(Vector<T>& other);
-  Matric<T> add(Matrix<T>& other);
 };
 
 #endif // MATRIX_HPP
