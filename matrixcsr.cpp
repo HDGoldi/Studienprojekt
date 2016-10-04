@@ -105,7 +105,7 @@ template<class T>
   {
     assert(i < size);
     assert(col_ind != nullptr);
-    return col_ind[i];
+    return col_ind[i]-1;
   }
 
 template<class T>
