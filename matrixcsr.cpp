@@ -21,7 +21,7 @@ MatrixCSR<T>::MatrixCSR(MatrixCOO<T>& other)
 	row_ptr = new unsigned int[size+1];
 	unsigned int counter1 = 0;
         unsigned int cr;
-	unsigned  counter2 = 0;
+	unsigned int counter2 = 0;
 	for(unsigned int i(0); i < zeilen; i++)
 	{
 		cr = 0;
