@@ -29,7 +29,7 @@ MatrixCDS<T>::MatrixCDS(MatrixCOO<T>& other):
 	val3[0]=0;
 }
 
-/*template<class T>
+template<class T>
 // Destruktor
   MatrixCDS<T>::~MatrixCDS() 
   {
@@ -39,7 +39,7 @@ MatrixCDS<T>::MatrixCDS(MatrixCOO<T>& other):
      delete [] val2;
    if(val3 != nullptr)
      delete [] val3;
-  };*/
+  };
 
 
 template<class T>
