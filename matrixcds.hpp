@@ -20,7 +20,7 @@ class MatrixCDS
 
 	public:
 	MatrixCDS(MatrixCOO<T>& other);
-	//~MatrixCDS();
+	~MatrixCDS();
 	unsigned int get_zei();
 	unsigned int get_spa();
 	unsigned int byte();
